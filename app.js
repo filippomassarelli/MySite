@@ -2,6 +2,9 @@
 //Require packages
 const express = require("express");
 const bodyParser = require("body-parser");
+const request = require("request");
+const https = require("https");
+
 
 const app = express();
 
@@ -46,6 +49,61 @@ app.get("/simon-index.html", function(req, res){
 app.get("/work-in-progress.html", function(req, res){
     res.sendFile(__dirname + "/work-in-progress.html")
 })
+
+app.get("/signup.html", function(req, res){
+  res.sendFile(__dirname+"/signup.html")
+});
+
+app.get("/signup.html", function(req, res){
+  res.sendFile(__dirname+"/signup.html")
+});
+
+//catch the post request from the form sent to /signup.html
+//post data to mailchimp API and respond with success or failure pages
+app.post("/signup.html", function(req, res){
+
+  const firstName = req.body.fName;
+  const lastName = req.body.lName;
+  const userEmail = req.body.email;
+
+  const data = {
+    members: [
+      {
+        email_address: userEmail,
+        status: "subscribed",
+        merge_fields: {
+          FNAME: firstName,
+          LNAME: lastName,
+        }
+      }
+    ]
+  }
+
+  const jsonData = JSON.stringify(data);
+
+  const url = 'https://us19.api.mailchimp.com/3.0/lists/48ec87b064';
+  const options = {
+    method: "POST",
+    auth: "filoxx:452616a7b4453961b7f03a056ac62bfc-us19"
+  };
+
+  const request = https.request(url, options, function(response){
+
+    if (response.statusCode === 200) {
+      res.sendFile(__dirname+"/success.html")
+    } else {
+      res.sendFile(__dirname+"/failure.html")
+    }
+
+    response.on("data", function(data){
+      console.log(JSON.parse(data));
+    })
+  });
+
+  request.write(jsonData);
+  request.end();
+
+});
 
 
 

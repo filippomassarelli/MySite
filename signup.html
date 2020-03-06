@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v3.8.6">
+  <title>Signin Template · Bootstrap</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/sign-in/">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+  <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+  <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#563d7c">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="CSS/styles.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+
+  <div class="container-fluid" style="">
+    <!-- Navigation Bar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light no-bg">
+      <a class="navbar-brand" href="home-index.html">
+        <img src="images/astronaut.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="#navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Frontend
+            </a>
+            <div class="dropdown-menu no-bg c-border" aria-labelledby="navbarDropdownMenuLink">
+              <a class="nav-link text-right" href="ps1-index.html">Basic Site</a>
+              <a class="nav-link text-right" href="ps2-index.html">Styled Site</a>
+              <a class="nav-link text-right" href="tindog-index.html">Tindog Website</a>
+              <a class="nav-link text-right" href="dicee.html">Dicee Challenge </a>
+              <a class="nav-link text-right" href="drumkit-index.html">Drumkit Challenge</a>
+              <a class="nav-link text-right" href="simon-index.html">Simon Game</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Backend
+            </a>
+            <div class="dropdown-menu no-bg c-border" aria-labelledby="navbarDropdownMenuLink">
+              <a class="nav-link text-right" href="work-in-progress.html">Work in progres...</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html">Contact </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+
+
+  <form action="/signup.html" class="form-signin" method="post">
+
+    <img class="mb-4" src="images/rocket.png" alt="" width="72" height="72">
+
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <input type="text" name="fName" class="form-control top" placeholder="Name" required autofocus>
+    <input type="text" name="lName" class="form-control middle" placeholder="Surname" required>
+    <input type="email" name="email" class="form-control bottom" placeholder="Email" required>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Me Up!</button>
+    <p class="mt-5 mb-3 text-muted">&copy; Filippo Massarelli</p>
+
+  </form>
+
+</body>
+
+</html>
