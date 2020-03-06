@@ -1,0 +1,164 @@
+/* ------- TAG SELECTORS ------- */
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 15%;
+  font-size: 3rem;
+  font-family: 'Space Mono', monospace;
+  color: #11999E;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Space Mono', monospace;
+  color: #11999E;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  color: #11999E;
+}
+
+hr {
+  width: 7.5%;
+  border-style: none;
+  border-top: dotted #66BFBF 20px;
+  margin: 75px auto 75px auto;
+}
+
+p {
+  line-height: 2;
+}
+
+
+/* ------- ID SELECTORS ------- */
+
+#title {
+  background-color: #ebfffb;
+}
+
+/* ------- CLASS SELECTORS ------- */
+.text-right {
+  text-align: right;
+}
+
+.no-bg {
+  background-color: #ebfffb;
+}
+
+.c-border {
+  border-color: #ebfffb;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+.top-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  width: 50%;
+}
+
+.middle-container {
+  background-color: #fcfcfc;
+  padding-bottom: 50px;
+}
+
+.bottom-container {
+  padding: 50px;
+  background-color: #66BFBF;
+}
+
+.main-image {
+  position: relative;
+  margin: 50px auto 50px auto;
+  width: 45%;
+  /* transform: rotate(45deg); */
+}
+.ahead {
+  position: relative;
+  z-index: 1;
+}
+
+.top-planet {
+  position: absolute;
+  right: 430px;
+  top: 12%;
+  width: 8%;
+}
+
+.bottom-planet {
+  position: absolute;
+  top: 40%;
+  left: 430px;
+  width: 10%;
+  z-index: 0;
+  opacity: 0.95;
+}
+
+.profile {
+  padding-top: 50px;
+  width: 50%;
+  margin: auto;
+}
+
+.footer-link {
+  color: #11999E;
+}
+
+.stripes {
+  margin: 100px auto 100px auto;
+  padding-top: 20px;
+  text-align: left;
+  text-align: justify;
+  width: 50%;
+}
+
+.img-dx {
+  float: right;
+  margin-left: 30px;
+  width: 30%;
+}
+
+.img-lx {
+  float: left;
+  margin-right: 30px;
+  width: 30%;
+}
+
+.btn {
+  border: 0.25rem solid #66BFBF;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  color: #fcfcfc;
+  background-color: #66BFBF;
+  margin-top: 50px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  border: 0.25rem solid #F29C20;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  color: #fcfcfc;
+  background-color: #F29C20;
+  margin-top: 50px;
+  text-decoration: none;
+}

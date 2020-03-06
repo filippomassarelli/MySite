@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> Filippo Massarelli - A quick learner </title>
+  <!--
+
+	Alright, you can look at this code - but only if you solve this maze within 10 seconds.
+	Fair is fair. Answers on a postcard, please.
+
+	Start.
+
+	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa   a
+	8   8               8               8           8                   8   8
+	8   8   aaaaaaaaa   8   aaaaa   aaaa8aaaa   aaaa8   aaaaa   aaaaa   8   8
+	8               8       8   8           8           8   8   8       8   8
+	8aaaaaaaa   a   8aaaaaaa8   8aaaaaaaa   8aaaa   a   8   8   8aaaaaaa8   8
+	8       8   8               8           8   8   8   8   8           8   8
+	8   a   8aaa8aaaaaaaa   a   8   aaaaaaaa8   8aaa8   8   8aaaaaaaa   8   8
+	8   8               8   8   8       8           8           8       8   8
+	8   8aaaaaaaaaaaaaaa8aaa8   8aaaa   8   aaaaa   8aaaaaaaa   8   aaaa8   8
+	8           8       8   8       8   8       8           8   8           8
+	8   aaaaa   8aaaa   8   8aaaa   8   8aaaaaaa8   a   a   8   8aaaaaaaaaaa8
+	8       8       8   8   8       8       8       8   8   8       8       8
+	8aaaaaaa8aaaa   8   8   8   aaaa8aaaa   8   aaaa8   8   8aaaa   8aaaa   8
+	8           8   8           8       8   8       8   8       8           8
+	8   aaaaa   8   8aaaaaaaa   8aaaa   8   8aaaa   8aaa8   aaaa8aaaaaaaa   8
+	8   8       8           8           8       8   8   8               8   8
+	8   8   aaaa8aaaa   a   8aaaa   aaaa8aaaa   8   8   8aaaaaaaaaaaa   8   8
+	8   8           8   8   8   8   8           8               8   8       8
+	8   8aaaaaaaa   8   8   8   8aaa8   8aaaaaaa8   aaaaaaaaa   8   8aaaaaaa8
+	8   8       8   8   8           8           8   8       8               8
+	8   8   aaaa8   8aaa8   aaaaa   8aaaaaaaa   8aaa8   a   8aaaaaaaa   a   8
+	8   8                   8           8               8               8   8
+	8   8aaaaaaaaaaaaaaaaaaa8aaaaaaaaaaa8aaaaaaaaaaaaaaa8aaaaaaaaaaaaaaa8aaa8
+
+	End.
+
+	-->
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- <link rel="icon" href="https://thenounproject.com/term/astronaut/1285121"> -->
+  <link rel="icon" href="images/astronaut.png">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet"> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <div class="container-fluid" style="">
+    <!-- Navigation Bar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light no-bg">
+      <a class="navbar-brand" href="/Users/massa/Desktop/Coding/Angela Yu/Webdev Bootcamp/My Site/home-index.html">
+        <img src="images/astronaut.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="#navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Frontend
+            </a>
+            <div class="dropdown-menu no-bg c-border" aria-labelledby="navbarDropdownMenuLink">
+              <a class="nav-link text-right" href="ps1-index.html">Basic Site</a>
+              <a class="nav-link text-right" href="ps2-index.html">Styled Site</a>
+              <a class="nav-link text-right" href="tindog-index.html">Tindog Website</a>
+              <a class="nav-link text-right" href="dicee.html">Dicee Challenge </a>
+              <a class="nav-link text-right" href="drumkit-index.html">Drumkit Challenge</a>
+              <a class="nav-link text-right" href="simon-index.html">Simon Game</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Backend
+            </a>
+            <div class="dropdown-menu no-bg c-border" aria-labelledby="navbarDropdownMenuLink">
+              <a class="nav-link text-right" href="work-in-progress.html">Work in progres...</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="work-in-progress.html">Contact </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+</head>
+
+<body style="margin:0 70px;">
+
+
+
+  <div style="margin-top:50px;">
+    <table cellspacing="20">
+      <thead>
+        <tr>
+          <td><img src="images/pp-filippo-seedrs.jpeg" alt="Filippo Seedrs profile picture" height="200px"></td>
+
+          <td>
+            <h1>Filippo Massarelli</h1>
+            <p><em>Portfolio Manager at <a href="https://seedrs.com/">Seedrs</a><br> Aspiring Junior Full Stack</em></p>
+            <p>In January 2020 I enrolled in Angela Yu's <strong>Udemy</strong> course <em><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">The Complete 2020 Web Development Bootcamp</a></em> and am documenting my progress here.
+              <br>The journey ahead is exciting to say the least. My objective is to immerse myself full time via <strong>Makers Academy</strong> and, if possible,
+              explore internal opportunities within <strong>Seedrs</strong>. Life is a continuous learning process to enjoy.</p>
+            <p>Link to:<a href="#contact"> Contact Information</a></p>
+          </td>
+        </tr>
+      </thead>
+    </table>
+  </div>
+
+
+  <hr size="1">
+
+
+  <h3>Frontend Course Material</h3>
+  <p></p>
+  <ul>
+    <li><strong>HTML:</strong><br>Sections 1 to 3 (video content: 3h) cover the basics of HTML up to an intermediate level.</li><br>
+    <li><strong>CSS:</strong><br>Sections 4 and 5 (video content: 4h30mn) take us through best practices of styling HTML with external CSS.</li><br>
+    <li><strong>Bootstrap:</strong><br>Section 6 and 7 (video content: 5h10mn) focus on making the most of pre-built components from the Bootstrap CSS framework.</li><br>
+    <li><strong>Javascript:</strong><br>Section 8 and 9 (video content: 4h) make us practice variables, functions and loops with a series of challenges (e.g. FizzBuzz).</li><br>
+    <li><strong>Document Object Model:</strong><br>Section 10 through to 12 (video content: 2h50mn) teach us how to use higher order functions and EventListeners to create our first interactive site (see Dicee Challenge).</li><br>
+    <li><strong>jQuery:</strong><br>Section 13 and 14 (video content: 1h) greatly simplify our lives by introducing us to Javascript's jQuery (see Simon Game).</li><br>
+  </ul>
+  <hr size="1">
+
+  <h3>My Background</h3>
+  <br>
+  <p>In order to bring some colour to who I am and where I come from, here's a short summary of my childhood, studies, work experience, and sports life. </p>
+  <br>
+  <h4>Cultural</h4>
+  <br>
+  <p>I am Italian, born in Rome. My mom who is a painter and my dad who is a food security expert for sustainable development projects so I hopped from country to country a lot.</p> <p> I lived in Uganda, Romania, Russia, Kenya, Nicaragua, Yemen, Honduras, and Chad before turning 14, when my parents moved to Botswana I went to Rome to finish Highschool. I was tough to change friends every couple of years but on the upside I am fluent in four languagues and had a lot of cool pets too.</p>
+  <br>
+  <h4>Academical</h4>
+  <br>
+  <p>After changing a few of elementary schools my parents soon discovered that the French Lycee is the only educational system present in almost every country across the globe. Thus I did the French Baccalaureat, with a major in Science and a specialisation in advanced mathematics. </p> <p>I didn't know what to study at University so I chose Mechanical Engineering mainly because I've always found maths easy, and phisics interesting. Plus Engineering seemed like the most logical choice for undecided people as it closes less doors than other fields of study. The only choice I had clear was that I wanted to study in the UK. So I went to the University of Southampton as it had ranked first for mechanical Engineering in the Guardian, and because it's by the sea ... at least on the map! Finally I specialised with a Master in Aerospace Engineering, but mainly because I found it interesting rather than because I wanted to work in the field.</p>
+  <p>With time I realised that continuous learning is must for me, as I find real pleasure in developing new skills. After University I have taken courses of Digital Marketing, Web Design, Data Science, Machine Learning, and now Web Development. </p>
+  <br>
+  <h4>Professional</h4>
+  <br>
+  <p>Thanks to professor Peter Webber, I was introduced to New Venture planning - one of my only non engineering modules at University. My business plan on a rather random idea (a beautifully designed solar powered cover for iPhone that rewards you the more you charge it) won the Santander UK University Awards. This fuelled the entrepreneurial momentum and soon I found myself in the first John Lewis Accelerator, running my own start-up.</p>
+  <p>After failing to find a sustainable business model I moved to Paris, to kick-start Teleperformance's Innovation Team, focussing on Corporate Innovation and Corporate Venture Capital. Hungry for my next entrepreneurial journey I soon moved to Rome in order to join Nanga Mai, a sustainable fashion startup as co-founder. In less than two years we grew Nanga Mai across 3 continents and made a small name for ourselves within the niche of high quality linen apparel. London soon came calling again, and with the experience gathered within the eraly stage startup ecosystem I joined Seedrs, where I am at time of writing (almost two years after joining) working as Portfolio Manager. </p>
+  <p>It is hard to build your professional identity but with my next step I believe I found the door to a path that would perfectly marry my creative abilities, engineering mindset and business acumen as well as passion of continuous self development. </p>
+  <br>
+  <h4>Athletic</h4>
+  <br>
+  <p>Like many kids I started with swimming and then moved to team sports. For me it was basketball. After 7 years of basketball I wanted a change and became passionate about martial arts. Starting with Karate I then transitioned to Muay Thai reaching a
+    semi-professional level at University. Knee surgery forced me to leave combat sports and ever since I have been having fun with gymnastics and powerlifting.</p><p>Undertaking some form physical activity on a daily basis has been a constant in my life, and will - I hope - remain as such indefinitely.</p>
+  <br>
+
+  <hr size="1">
+
+  <h3>Professional Skills</h3>
+
+  <table cellspacing="20">
+    <tr>
+      <td>
+        <table cellspacing="5">
+          <tr>
+            <td>Creativity</td>
+            <td>★★★★☆</td>
+          </tr>
+          <tr>
+            <td>Upskilling</td>
+            <td>★★★★★</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table cellspacing="5">
+          <tr>
+            <td>Teamwork</td>
+            <td>★★★★☆</td>
+          </tr>
+          <tr>
+            <td>Web Development</td>
+            <td>★☆☆☆☆</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table cellspacing="5">
+          <tr>
+            <td>Data Science</td>
+            <td>★★★☆☆</td>
+          </tr>
+          <tr>
+            <td>Business Development</td>
+            <td>★★★★☆</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table cellspacing="5">
+          <tr>
+            <td>Communication</td>
+            <td>★★★★☆</td>
+          </tr>
+          <tr>
+            <td>Public Speaking</td>
+            <td>★★★☆☆</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+
+  <hr size="1">
+
+  <h3> <a name="contact">Contact Information</a></h3>
+  <p><em>Filippo Massarelli</em></p>
+  <p><em>Portfolio Manager<br>Seedrs HQ<br>Churchill House, 142-146 Old St,<br>London EC1V 9BW</em></p>
+  <p><em>filippo.massarelli@seedrs.com</em></p>
+
+  <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="I've always loved skeletons"
+    data-content="Behold, my very first page ever! Ugly.. but that's how they used to be. Learning HTML to build the skeletons of modern websites is so rewarding when you are starting off.. everything seemed so simple!" style="position: fixed; bottom: 100px; right: 50px">
+    Click me!</button>
+  <script>
+    $(document).ready(function() {
+      $('[data-toggle="popover"]').popover();
+    });
+  </script>
+
+
+</body>
+
+</html>
