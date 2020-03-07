@@ -100,7 +100,7 @@ p {
 
 .bottom-planet {
   position: absolute;
-  top: 40%;
+  top: 325px;
   right: 15%;
   width: 10%;
   z-index: 0;
